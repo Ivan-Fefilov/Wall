@@ -1,0 +1,28 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<div class="comment padded">
+    <span class="icon-user information"><c:out value=" ${comments.user.info.name}"/></span> 
+    <span><c:choose>
+            <c:when test="${comments.editTime != comments.time}">
+                <span class="icon-calendar information" ><c:out value=" Редактировано: ${comments.editTime}"/></span>
+            </c:when>
+            <c:otherwise>
+                <span class="icon-calendar information" ><c:out value=" ${comments.time}"/></span>
+            </c:otherwise>
+        </c:choose>
+    </span>
+    <p class="padded"><c:out value="${comments.content}"/></p>
+    <c:if test="${user == posts.user}">
+        <form id="delete-comment-${comments.id}" method="post" action="/delete-comment">
+            <input type="hidden" name="commentId" value="${comments.id}">
+            <a class="icon-eraser pull-right link" onclick="document.getElementById('delete-comment-${comments.id}').submit()"> Удалить</a>
+        </form>
+        <form id="edit-comment-${comments.id}" method="get" action="/edit-comment">
+            <input type="hidden" name="commentId" value="${comments.id}">
+            <a class="icon-edit pull-right link" onclick="document.getElementById('edit-comment-${comments.id}').submit()"> Редактировать</a>
+        </form>
+    </c:if>
+    <hr>
+</div>
+

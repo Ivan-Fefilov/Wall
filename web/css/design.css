@@ -1,0 +1,40 @@
+@import"groundwork-anim.css";
+@import"groundwork-core.css";
+@import"groundwork-ie.css";
+@import"groundwork-responsive.css";
+@import"groundwork-type.css";
+@import"groundwork-ui.css";
+@import"groundwork.css";
+@import"placeholder_polyfill.css";
+
+
+p{
+     text-indent: 1em;
+}
+
+
+a.link{
+    color: #666666;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 0.5em;
+}
+.post{
+    align-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.comment{
+    margin-left: 6em;
+    margin-right: 6em;
+}
+span.information {
+    color: #666666;
+    margin-right: 2em;
+}
+.message{
+    border: 0.01em solid #383636;
+    color: #383636;
+    text-align: center;
+    background-color: white
+}

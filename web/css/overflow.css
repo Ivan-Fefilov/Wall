@@ -1,0 +1,6 @@
+p { white-space: nowrap;
+    overflow: hidden;
+    -moz-binding: url( 'bindings.xml#ellipsis' );
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}

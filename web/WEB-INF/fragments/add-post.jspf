@@ -1,0 +1,9 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<form method="post" action="/" class="padded margin gap-bottom">
+    <%@include file="../fragments/error.jspf" %>
+    <h1>Какие у Вас новости?</h1>
+    <input name ="title" type="text" class="gap-bottom" placeholder="Title" value="${title}">
+    <textarea name ="content" type="text" class="gap-bottom" placeholder="Content" value="${content}"></textarea>
+    <button class=" red pull-right ">Создать</button>
+</form>

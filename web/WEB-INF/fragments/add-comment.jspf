@@ -1,0 +1,7 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<form method="post" action="/comments" class="padded gap-bottom comment">
+    <%@include file="../fragments/error.jspf" %>
+    <textarea name ="content" type="text" class="gap-bottom" placeholder="Content" value="${content}"></textarea>
+    <button class=" red pull-right ">Добавить</button>
+</form>
