@@ -10,4 +10,4 @@ publications in reverse chronological order. After login, in this section the us
 "Create post", and the control buttons (in each publication): "Delete" and "Edit", which
 deletes the corresponding publication and transition to the edit form of the corresponding
 publications.
-In this project I learned how to work and use EJB (entity, facades), servlets and JSP.
+In this project I learned how to work and use EJB (entities, facades), servlets and JSP.
